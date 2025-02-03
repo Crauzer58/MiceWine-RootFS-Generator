@@ -1,4 +1,4 @@
-PKG_VER="10.0-esync"
+PKG_VER="9.16-win"
 PKG_CATEGORY="Wine"
 PKG_PRETTY_NAME="Wine ($PKG_VER)"
 
