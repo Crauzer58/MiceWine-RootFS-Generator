@@ -481,7 +481,7 @@ case $1 in "aarch64"|"x86_64")
 	exit 0
 esac
 
-export APP_ROOT_DIR=/data/data/com.micewine.emu
+export APP_ROOT_DIR=$(readlink -f /proc/$$/cwd/../../..)
 export PREFIX=$APP_ROOT_DIR/files/usr
 
 if [ ! -e "$PREFIX" ]; then
